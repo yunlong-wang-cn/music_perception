@@ -33,6 +33,10 @@ class OnsetDetector:
             dtype=float)
 
     def check_audio_format(self):
+        """
+        check available audio input format, if it satisfy the requirements.
+        :return:
+        """
         rospy.loginfo("Waiting for Audio Info")
         info = rospy.wait_for_message("audio_info", AudioInfo)
         if info.channels != 1:

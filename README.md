@@ -17,7 +17,7 @@ This installation instruction has been currently verified only at the lab comput
 2. Because the `audio_common` in lab computer is out of date, so you need to download it and rebuild, therefore `git clone https://github.com/ros-drivers/audio_common.git`
 3. Try to build the package: `catkin build`
 
-### 3. Visualization of note onset detection in form of spectrum.
+## 3. Visualization of note onset detection in form of spectrum.
 1. Action current built ros package: `source devel/setup.bash`
 2. Start the sound capture node: `roslaunch music_perception microphone.launch`
 3. Open a new terminal and start the note onset detection node: `roslaunch music_perception detect_onset.launch` (don't forget to activate the python venv and source the `setup.bash` of both ros noetic and the ros package built before)

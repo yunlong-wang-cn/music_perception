@@ -10,7 +10,7 @@ This installation instruction has been currently verified only at the lab comput
 1. Come to your project position, the build the python virtualenv: `python -m venv env_sound2note --system-site-packages && source env_sound2note/bin/activate`.
 2. Build you ros workspace: `mkdir -p ws_soud2note/src && cd ws_soud2note/src`. 
 3. Download the code: `git clone https://github.com/yunlong-wang-cn/music_perception.git`.
-4. Install the python requirements: `pip install -r music_perception/requirements.txt`.
+4. Install the python requirements: `pip install librosa`, and the `pip install crepe`
 
 ### 2.3 Build ros workspace
 1. Activate the ros environment on the computer: `source /opt/ros/noetic/setup.bash`, or write this command into `~/.bashrc`.

@@ -73,8 +73,9 @@ class OnsetDetector:
         # guzheng
         self.fmin_note = "C2"
         self.fmax_note = "C8"
-        self.semitones = 84
+        self.semitones = 84  # question: what is semitones, and why use it, why it equal to 84
 
+        # convert the western notation to the corresponding frequency
         self.fmin = librosa.note_to_hz(self.fmin_note)
         self.fmax = librosa.note_to_hz(self.fmax_note)
 
